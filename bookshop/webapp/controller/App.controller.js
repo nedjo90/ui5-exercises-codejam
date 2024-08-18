@@ -41,7 +41,7 @@ sap.ui.define(
         const selectedBookTitle = oBindingContext.getProperty("title");
         const inputValue = this.getView().byId("stepInput").getValue();
 
-        const oModel = this.getView().getModel();
+        const oModel = this.getView().getModel("i18n");
         oModel.callFunction("/submitOrder", {
           method: "POST",
           urlParameters: {
